@@ -15,11 +15,13 @@ body {
     margin: 0 auto;
     height: 100vh;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #aaa;
 }
 
 .container {
     display: flex;
     flex-direction: row;
+    box-shadow: 0 0 10px #444;
 }
 
 .left {
@@ -50,6 +52,7 @@ body {
 .right {
     flex: 3;
     padding: 10% 10% 10% 3rem;
+    background-color: white;
 }
 
 .right p {
@@ -67,8 +70,8 @@ body {
 }
 
 .form-control {
-    display: b;
     width: 50%;
+    position: relative;
 }
 
 .form-control * {
@@ -117,6 +120,14 @@ form button {
 
 form button:hover {
     background-color: var(--focus-color);
+}
+
+.right p.error {
+    font-weight: normal;
+    font-size: 0.75rem;
+    color: red;
+    position: absolute;
+    top: 70%;
 }
 
 p.login {
